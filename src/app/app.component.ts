@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'front-demo-dockerize';
+  title = 'Spring Boot 3 + MongoDB + Angular CRUD Application';
 }

@@ -17,6 +17,5 @@ RUN rm /etc/nginx/conf.d/default.conf
 COPY nginx.conf /etc/nginx/conf.d
 # Finalemnte para el despliegue de la app, una vez que se haya hecho el build
 COPY --from=build /app/dist/front-demo-dockerize /usr/share/nginx/html
-# Puerto por el cual saldrá
+# Puerto por el cual saldrá internamente. Al desplegar el contenedor se usa otro puerto
 EXPOSE 80
-

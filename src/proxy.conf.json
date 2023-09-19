@@ -1,6 +1,11 @@
 {
-  "/api/v1": {
-    "target": "http://localhost:46000",
-    "secure": false
+  "/api/*": {
+    "target": "http://localhost:9060",
+    "secure": false,
+    "pathRewrite": {
+      "^/api/":""
+    },
+    "changeOrigin": false,
+    "logLevel":"debug"
   }
 }

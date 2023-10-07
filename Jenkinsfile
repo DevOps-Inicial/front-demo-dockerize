@@ -19,7 +19,6 @@ pipeline {
 
     stage('build') {
       steps {
-        git url: 'https://github.com/DevOps-Inicial/front-demo-dockerize.git'
         sh 'npm run build'
       }
     }
